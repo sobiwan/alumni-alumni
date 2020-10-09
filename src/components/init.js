@@ -3,27 +3,35 @@ import ReactFreezeframe from "react-freezeframe";
 import { gateGIF } from "../assets/images";
 import "../styles";
 
-function EntranceScreen() {
+function EntranceScreen(props) {
   const gateRef = useRef(null);
   function startGate() {
     gateRef.current.start();
   }
-  function stopGate() {
-    gateRef.current.stop();
+  function openMainPage() {
+    props.history.replace("/trophy-room");
+  }
+  function onClickEnter() {
+    startGate();
+    setTimeout(function () {
+      openMainPage();
+    }, 5000);
   }
   return (
     <div className="entrance-screen-container">
-      <div onClick={startGate}>Start</div>
-      <ReactFreezeframe
-        src={gateGIF}
-        ref={gateRef}
-        options={{
-          trigger: false,
-          overlay: false,
-        }}
-        className="entrance-gate-gif"
-      />
-      <div onClick={stopGate}>Stop</div>
+      <div onClick={onClickEnter} className="entrance-button">
+        <div>Enter</div>
+      </div>
+      <div className="gate-gif-container">
+        <ReactFreezeframe
+          src={gateGIF}
+          ref={gateRef}
+          options={{
+            trigger: false,
+            overlay: false,
+          }}
+        />
+      </div>
     </div>
   );
 }

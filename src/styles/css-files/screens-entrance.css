@@ -2,12 +2,34 @@
   height: 100vh;
   width: 100vw;
   position: relative;
+  background-color: black;
+  /* z-index: -2; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.entrance-gate-gif {
-  height: 100vh;
+.gate-gif-container {
   width: 100vw;
-  object-fit: cover;
   position: fixed;
   top: 0;
+  /* z-index: -1; */
+}
+
+.entrance-button {
+  width: 220px;
+  height: 36px;
+
+  background: #ffffff;
+  border: 1.5px solid #000000;
+  box-sizing: border-box;
+  border-radius: 0px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+
+  z-index: 1;
 }
