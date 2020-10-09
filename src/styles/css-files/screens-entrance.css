@@ -1,0 +1,13 @@
+.entrance-screen-container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.entrance-gate-gif {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+}

@@ -1,26 +1,31 @@
-import React from "react";
-import logo from "../logo.svg";
+import React, { useRef } from "react";
+import ReactFreezeframe from "react-freezeframe";
+import { gateGIF } from "../assets/images";
 import "../styles";
 
-function App() {
+function EntranceScreen() {
+  const gateRef = useRef(null);
+  function startGate() {
+    gateRef.current.start();
+  }
+  function stopGate() {
+    gateRef.current.stop();
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          HELLO <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="entrance-screen-container">
+      <div onClick={startGate}>Start</div>
+      <ReactFreezeframe
+        src={gateGIF}
+        ref={gateRef}
+        options={{
+          trigger: false,
+          overlay: false,
+        }}
+        className="entrance-gate-gif"
+      />
+      <div onClick={stopGate}>Stop</div>
     </div>
   );
 }
 
-export default App;
+export default EntranceScreen;
