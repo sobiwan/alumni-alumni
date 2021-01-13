@@ -4697,10 +4697,10 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-freezeframe@^4.1.3:
-  version "4.1.3"
-  resolved "https://registry.yarnpkg.com/freezeframe/-/freezeframe-4.1.3.tgz#e68c167e4a73bc25763ca93d836521193fc8a9e1"
-  integrity sha512-AsR6x60OQ7atcbxgrkG/IX1b1D5ZXarOmc2a+jWIpXulPX0uihujiWGt/vCCh7baF0tesdm6tbKjKYZ0z5Dvow==
+freezeframe@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/freezeframe/-/freezeframe-5.0.0.tgz#3b25922ef4ee3299813837311573b7da584bb64c"
+  integrity sha512-nA8u3YSBKhp+jRk9hJpSKUbh9+YBlBj6qRW7o9rPHc1JYzuftwZm634IfkEq58Xji1Vii4NVeFMdrlhOZWhUsg==
 
 fresh@0.5.2:
   version "0.5.2"
@@ -8463,7 +8463,7 @@ prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.4"
 
-prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -8674,17 +8674,10 @@ react-error-overlay@^6.0.7:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.7.tgz#1dcfb459ab671d53f660a991513cb2f0a0553108"
   integrity sha512-TAv1KJFh3RhqxNvhzxj6LeT5NWklP6rDr2a0jaTfsZ5wSZWHOGeqQyejUp3xxLfPt2UpyJEcVQB/zyPcmonNFA==
 
-react-freezeframe@^4.1.3:
-  version "4.1.3"
-  resolved "https://registry.yarnpkg.com/react-freezeframe/-/react-freezeframe-4.1.3.tgz#88078650c39b248ed6089bdeeaf1c3232ac47772"
-  integrity sha512-6lxU9r9ZKnt5cxquZ9c1O5VPhhO1OtQvXngZeAxcOKVm46An6a6x7bTR+DMR1tsVz94Qs4boZjbviTzLPAjqgQ==
-
-react-gif-player@^0.4.2:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/react-gif-player/-/react-gif-player-0.4.2.tgz#7f7675625bb264a3cfac8956edd5a18b8c196af3"
-  integrity sha512-ub++AT0PgbVxw1S0ahV3Q/4m67772r3vrnE6VqYed0Wi0cB9iremID8UnkFhZJCge77lwumsFOYsk1ShmouAgA==
-  dependencies:
-    prop-types "^15.6.0"
+react-freezeframe@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/react-freezeframe/-/react-freezeframe-5.0.0.tgz#3dafe14ad1c3742e27cae6325073244de51c0e5a"
+  integrity sha512-2L6CQaICogQ2z5O0bx52Zyx/QsQa8BhboaRv1AbnEye7RzPf5guHYFQG7jNRfydoX/OkyvAoOKfJwsfYHGBtfQ==
 
 react-hot-loader@^4.13.0:
   version "4.13.0"
@@ -8699,6 +8692,11 @@ react-hot-loader@^4.13.0:
     react-lifecycles-compat "^3.0.4"
     shallowequal "^1.1.0"
     source-map "^0.7.3"
+
+react-icons@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.1.0.tgz#9ca9bcbf2e3aee8e86e378bb9d465842947bbfc3"
+  integrity sha512-FCXBg1JbbR0vWALXIxmFAfozHdVIJmmwCD81Jk0EKOt7Ax4AdBNcaRkWhR0NaKy9ugJgoY3fFvo0PHpte55pXg==
 
 react-is@^16.12.0, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4:
   version "16.13.1"
