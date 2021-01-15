@@ -1,9 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import WebFont from "webfontloader";
 import { AppContainer } from "react-hot-loader";
 import "./styles";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+
+WebFont.load({
+  google: {
+    families: ["sans-serif", "Libre Franklin"],
+  },
+});
 
 const render = (Component) => {
   ReactDOM.render(
