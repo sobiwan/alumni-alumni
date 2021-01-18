@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Image } from "../common";
 import {
   FantasyFBallURL,
   GolfImageURL,
   KOMImageURL,
   OpaqueTrophyBackgroundURL,
 } from "../../assets/images";
+import TrophyItem from "../trophy/TrophyItem";
 import "../../styles";
 
 const TrophyItems = [
@@ -27,22 +27,6 @@ const TrophyItems = [
   },
 ];
 
-const TophyItem = ({ item }) => (
-  <div className="trophy-item">
-    <Image
-      source={item.url}
-      width={350}
-      height={200}
-      dropShadow
-      text={item.text}
-      textPosition="center"
-      textStyle={{ fontSize: 25 }}
-      cover
-    />
-    {item.showContent && <div>hello</div>}
-  </div>
-);
-
 function TrophyRoom() {
   return (
     <div
@@ -51,10 +35,10 @@ function TrophyRoom() {
     >
       <Link to="/">back to the gate</Link>
       <div>
-        <div className="trophy-title flex-center">Trophy Room</div>
+        <div className="trophy-title flex-center">Hall of Fame</div>
         <div className="trophies-container flex-column flex-center">
           {TrophyItems.map((item) => (
-            <TophyItem item={item} />
+            <TrophyItem item={item} />
           ))}
         </div>
       </div>

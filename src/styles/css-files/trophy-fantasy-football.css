@@ -1,0 +1,46 @@
+.ff-content-item {
+  width: 550px;
+  height: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: white;
+  margin: 25px 0;
+  border-radius: 7px;
+}
+
+.content-tab-style {
+  overflow-y: scroll;
+}
+
+.content-tab-style::-webkit-scrollbar {
+  display: none;
+}
+.content-tab-style {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.champion-content-container {
+  padding: 25px;
+}
+
+.champion-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: darkslategray;
+}
+
+.champion-plauqe-decorations {
+  position: absolute;
+  height: 70px;
+  width: 290px;
+  border: 2px solid whitesmoke;
+}
+
+.champion-plauqe-item {
+  height: 90px;
+  width: 310px;
+  margin: 20px 0;
+  background-color: darkslategray;
+  color: whitesmoke;
+  position: relative;
+}

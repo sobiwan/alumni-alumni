@@ -4,7 +4,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  opacity: 1;
+  background-attachment: fixed;
+  overflow-y: scroll;
 }
 
 .trophy-title {
